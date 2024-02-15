@@ -47,5 +47,19 @@ require("lazy").setup({
     },
     -- linter
     { 'jose-elias-alvarez/null-ls.nvim' },
+    -- autoclose bracket
     {'windwp/nvim-autopairs', event = "InsertEnter", opts = {}},
+    -- tab on top screen
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+    -- multi-line comments
+    {'terrortylor/nvim-comment'},
+    -- line of state at the bottom of the screen
+    {'terrortylor/nvim-comment'},
+
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons', 'linrongbin16/lsp-progress.nvim'
+        }
+    },
 })
